@@ -1,0 +1,736 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>CompilerContext</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+    <link href="../../../styles/style.css" rel="Stylesheet">
+    <link href="../../../styles/logo-styles.css" rel="Stylesheet">
+    <link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+    <link href="../../../styles/main.css" rel="Stylesheet">
+    <script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+    <script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+    <script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+    <script type="text/javascript" src="../../../scripts/main.js" async="async"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="leftColumn">
+        <div id="logo"></div>
+        <div id="paneSearch"></div>
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div id="leftToggler"><span class="icon-toggler"></span></div>
+        <script type="text/javascript" src="../../../scripts/pages.js"></script>
+        <script type="text/javascript" src="../../../scripts/main.js"></script>
+        <div class="main-content" id="content" pageIds="com.cubearrow.cubelang.compiler/CompilerContext///PointingToDeclaration//-420969758">
+          <div class="navigation-wrapper" id="navigation-wrapper">
+            <div class="breadcrumbs"><a href="../../index.html">X86_64Backend</a>/<a href="../index.html">com.cubearrow.cubelang.compiler</a>/<a href="index.html">CompilerContext</a></div>
+            <div class="pull-right d-flex">
+              <div id="searchBar"></div>
+            </div>
+          </div>
+          <div class="cover ">
+            <h1 class="cover"><span>Compiler</span><wbr></wbr><span>Context</span></h1>
+            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">data class <a href="index.html">CompilerContext</a>(compilerInstance: <a href="../-compiler/index.html">Compiler</a>, currentReturnType: <span data-unresolved-link="com.cubearrow.cubelang.common/Type///PointingToDeclaration/">Type</span>?, isInSubOperation: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, operationIndex: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, stackIndex: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>&gt;, lIndex: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, jmpOnReturn: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, separateReturnSegment: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, argumentIndex: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, operationResultType: <span data-unresolved-link="com.cubearrow.cubelang.common/Type///PointingToDeclaration/">Type</span>?, variables: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, <a href="../-compiler/-local-variable/index.html">Compiler.LocalVariable</a>&gt;&gt;, functions: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a>&lt;<span data-unresolved-link="com.cubearrow.cubelang.common.definitions/Function///PointingToDeclaration/">Function</span>&gt;, inJmpCondition: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, isOR: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, structs: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, <a href="../-compiler/-struct/index.html">Compiler.Struct</a>&gt;, errorLibrary: <span data-unresolved-link="com.cubearrow.cubelang.common.errors/ErrorLibrary///PointingToDeclaration/">ErrorLibrary</span>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">A context class for the variables used in the <a href="../-compiler/index.html">Compiler</a>. This class also contains some utility functions which use the variables of the class.</p></div></div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+            <div class="tabs-section-body">
+              <h2 class="tabbedcontent">Constructors</h2>
+              <div class="table" data-togglable="Constructors"><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FCompilerContext%2F%23com.cubearrow.cubelang.compiler.Compiler%23com.cubearrow.cubelang.common.Type%3F%23kotlin.Boolean%23kotlin.Int%23kotlin.collections.MutableList%5Bkotlin.Int%5D%23kotlin.Int%23kotlin.Boolean%23kotlin.Boolean%23kotlin.Int%23com.cubearrow.cubelang.common.Type%3F%23kotlin.collections.MutableList%5Bkotlin.collections.MutableMap%5Bkotlin.String%2Ccom.cubearrow.cubelang.compiler.Compiler.LocalVariable%5D%5D%23kotlin.collections.MutableList%5Bcom.cubearrow.cubelang.common.definitions.Function%5D%23kotlin.Boolean%23kotlin.Boolean%23kotlin.collections.MutableMap%5Bkotlin.String%2Ccom.cubearrow.cubelang.compiler.Compiler.Struct%5D%23com.cubearrow.cubelang.common.errors.ErrorLibrary%2FPointingToDeclaration%2F%5D%2FConstructors%2F-420969758" anchor-label="CompilerContext" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FCompilerContext%2F%23com.cubearrow.cubelang.compiler.Compiler%23com.cubearrow.cubelang.common.Type%3F%23kotlin.Boolean%23kotlin.Int%23kotlin.collections.MutableList%5Bkotlin.Int%5D%23kotlin.Int%23kotlin.Boolean%23kotlin.Boolean%23kotlin.Int%23com.cubearrow.cubelang.common.Type%3F%23kotlin.collections.MutableList%5Bkotlin.collections.MutableMap%5Bkotlin.String%2Ccom.cubearrow.cubelang.compiler.Compiler.LocalVariable%5D%5D%23kotlin.collections.MutableList%5Bcom.cubearrow.cubelang.common.definitions.Function%5D%23kotlin.Boolean%23kotlin.Boolean%23kotlin.collections.MutableMap%5Bkotlin.String%2Ccom.cubearrow.cubelang.compiler.Compiler.Struct%5D%23com.cubearrow.cubelang.common.errors.ErrorLibrary%2FPointingToDeclaration%2F%5D%2FConstructors%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue TabbedContent">
+                    <div class=""><span class="inline-flex"><a href="-compiler-context.html">CompilerContext</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FCompilerContext%2F%23com.cubearrow.cubelang.compiler.Compiler%23com.cubearrow.cubelang.common.Type%3F%23kotlin.Boolean%23kotlin.Int%23kotlin.collections.MutableList%5Bkotlin.Int%5D%23kotlin.Int%23kotlin.Boolean%23kotlin.Boolean%23kotlin.Int%23com.cubearrow.cubelang.common.Type%3F%23kotlin.collections.MutableList%5Bkotlin.collections.MutableMap%5Bkotlin.String%2Ccom.cubearrow.cubelang.compiler.Compiler.LocalVariable%5D%5D%23kotlin.collections.MutableList%5Bcom.cubearrow.cubelang.common.definitions.Function%5D%23kotlin.Boolean%23kotlin.Boolean%23kotlin.collections.MutableMap%5Bkotlin.String%2Ccom.cubearrow.cubelang.compiler.Compiler.Struct%5D%23com.cubearrow.cubelang.common.errors.ErrorLibrary%2FPointingToDeclaration%2F%5D%2FConstructors%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">fun <a href="-compiler-context.html">CompilerContext</a>(compilerInstance: <a href="../-compiler/index.html">Compiler</a>, currentReturnType: <span data-unresolved-link="com.cubearrow.cubelang.common/Type///PointingToDeclaration/">Type</span>? = null, isInSubOperation: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false, operationIndex: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a> = -1, stackIndex: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>&gt; = ArrayList(), lIndex: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a> = 0, jmpOnReturn: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false, separateReturnSegment: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false, argumentIndex: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a> = 0, operationResultType: <span data-unresolved-link="com.cubearrow.cubelang.common/Type///PointingToDeclaration/">Type</span>? = null, variables: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, <a href="../-compiler/-local-variable/index.html">Compiler.LocalVariable</a>&gt;&gt; = ArrayList(), functions: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a>&lt;<span data-unresolved-link="com.cubearrow.cubelang.common.definitions/Function///PointingToDeclaration/">Function</span>&gt; = ArrayList(), inJmpCondition: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false, isOR: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false, structs: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, <a href="../-compiler/-struct/index.html">Compiler.Struct</a>&gt; = HashMap(), errorLibrary: <span data-unresolved-link="com.cubearrow.cubelang.common.errors/ErrorLibrary///PointingToDeclaration/">ErrorLibrary</span>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Functions</h2>
+              <div class="table" data-togglable="Functions"><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FaddFunctions%2F%23kotlin.collections.List%5Bcom.cubearrow.cubelang.common.definitions.Function%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="addFunctions" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FaddFunctions%2F%23kotlin.collections.List%5Bcom.cubearrow.cubelang.common.definitions.Function%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="add-functions.html">addFunctions</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FaddFunctions%2F%23kotlin.collections.List%5Bcom.cubearrow.cubelang.common.definitions.Function%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">fun <a href="add-functions.html">addFunctions</a>(functionsToAdd: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<span data-unresolved-link="com.cubearrow.cubelang.common.definitions/Function///PointingToDeclaration/">Function</span>&gt;)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FaddFunctions%2F%23kotlin.collections.List%5Bcom.cubearrow.cubelang.common.definitions.Function%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="addFunctions" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FaddFunctions%2F%23kotlin.collections.List%5Bcom.cubearrow.cubelang.common.definitions.Function%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FaddFunctions%2F%23kotlin.collections.List%5Bcom.cubearrow.cubelang.common.definitions.Function%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="addFunctions" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FaddFunctions%2F%23kotlin.collections.List%5Bcom.cubearrow.cubelang.common.definitions.Function%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>Adds a list of functions to the <a href="functions.html">functions</a> using <span data-unresolved-link="com.cubearrow.cubelang.compiler/CompilerContext/addFunction/#com.cubearrow.cubelang.common.definitions.Function/PointingToDeclaration/">addFunction</span>.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent1%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="component1" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent1%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="component1.html">component1</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent1%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">operator fun <a href="component1.html">component1</a>(): <a href="../-compiler/index.html">Compiler</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent10%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="component10" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent10%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="component10.html">component10</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent10%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">operator fun <a href="component10.html">component10</a>(): <span data-unresolved-link="com.cubearrow.cubelang.common/Type///PointingToDeclaration/">Type</span>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent11%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="component11" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent11%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="component11.html">component11</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent11%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">operator fun <a href="component11.html">component11</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, <a href="../-compiler/-local-variable/index.html">Compiler.LocalVariable</a>&gt;&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent12%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="component12" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent12%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="component12.html">component12</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent12%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">operator fun <a href="component12.html">component12</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a>&lt;<span data-unresolved-link="com.cubearrow.cubelang.common.definitions/Function///PointingToDeclaration/">Function</span>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent13%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="component13" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent13%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="component13.html">component13</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent13%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">operator fun <a href="component13.html">component13</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent14%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="component14" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent14%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="component14.html">component14</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent14%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">operator fun <a href="component14.html">component14</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent15%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="component15" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent15%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="component15.html">component15</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent15%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">operator fun <a href="component15.html">component15</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, <a href="../-compiler/-struct/index.html">Compiler.Struct</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent16%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="component16" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent16%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="component16.html">component16</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent16%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">operator fun <a href="component16.html">component16</a>(): <span data-unresolved-link="com.cubearrow.cubelang.common.errors/ErrorLibrary///PointingToDeclaration/">ErrorLibrary</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent2%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="component2" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent2%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="component2.html">component2</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent2%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">operator fun <a href="component2.html">component2</a>(): <span data-unresolved-link="com.cubearrow.cubelang.common/Type///PointingToDeclaration/">Type</span>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent3%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="component3" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent3%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="component3.html">component3</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent3%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">operator fun <a href="component3.html">component3</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent4%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="component4" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent4%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="component4.html">component4</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent4%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">operator fun <a href="component4.html">component4</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent5%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="component5" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent5%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="component5.html">component5</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent5%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">operator fun <a href="component5.html">component5</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent6%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="component6" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent6%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="component6.html">component6</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent6%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">operator fun <a href="component6.html">component6</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent7%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="component7" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent7%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="component7.html">component7</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent7%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">operator fun <a href="component7.html">component7</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent8%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="component8" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent8%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="component8.html">component8</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent8%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">operator fun <a href="component8.html">component8</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent9%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="component9" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent9%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="component9.html">component9</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcomponent9%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">operator fun <a href="component9.html">component9</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcopy%2F%23com.cubearrow.cubelang.compiler.Compiler%23com.cubearrow.cubelang.common.Type%3F%23kotlin.Boolean%23kotlin.Int%23kotlin.collections.MutableList%5Bkotlin.Int%5D%23kotlin.Int%23kotlin.Boolean%23kotlin.Boolean%23kotlin.Int%23com.cubearrow.cubelang.common.Type%3F%23kotlin.collections.MutableList%5Bkotlin.collections.MutableMap%5Bkotlin.String%2Ccom.cubearrow.cubelang.compiler.Compiler.LocalVariable%5D%5D%23kotlin.collections.MutableList%5Bcom.cubearrow.cubelang.common.definitions.Function%5D%23kotlin.Boolean%23kotlin.Boolean%23kotlin.collections.MutableMap%5Bkotlin.String%2Ccom.cubearrow.cubelang.compiler.Compiler.Struct%5D%23com.cubearrow.cubelang.common.errors.ErrorLibrary%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="copy" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcopy%2F%23com.cubearrow.cubelang.compiler.Compiler%23com.cubearrow.cubelang.common.Type%3F%23kotlin.Boolean%23kotlin.Int%23kotlin.collections.MutableList%5Bkotlin.Int%5D%23kotlin.Int%23kotlin.Boolean%23kotlin.Boolean%23kotlin.Int%23com.cubearrow.cubelang.common.Type%3F%23kotlin.collections.MutableList%5Bkotlin.collections.MutableMap%5Bkotlin.String%2Ccom.cubearrow.cubelang.compiler.Compiler.LocalVariable%5D%5D%23kotlin.collections.MutableList%5Bcom.cubearrow.cubelang.common.definitions.Function%5D%23kotlin.Boolean%23kotlin.Boolean%23kotlin.collections.MutableMap%5Bkotlin.String%2Ccom.cubearrow.cubelang.compiler.Compiler.Struct%5D%23com.cubearrow.cubelang.common.errors.ErrorLibrary%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="copy.html">copy</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fcopy%2F%23com.cubearrow.cubelang.compiler.Compiler%23com.cubearrow.cubelang.common.Type%3F%23kotlin.Boolean%23kotlin.Int%23kotlin.collections.MutableList%5Bkotlin.Int%5D%23kotlin.Int%23kotlin.Boolean%23kotlin.Boolean%23kotlin.Int%23com.cubearrow.cubelang.common.Type%3F%23kotlin.collections.MutableList%5Bkotlin.collections.MutableMap%5Bkotlin.String%2Ccom.cubearrow.cubelang.compiler.Compiler.LocalVariable%5D%5D%23kotlin.collections.MutableList%5Bcom.cubearrow.cubelang.common.definitions.Function%5D%23kotlin.Boolean%23kotlin.Boolean%23kotlin.collections.MutableMap%5Bkotlin.String%2Ccom.cubearrow.cubelang.compiler.Compiler.Struct%5D%23com.cubearrow.cubelang.common.errors.ErrorLibrary%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">fun <a href="copy.html">copy</a>(compilerInstance: <a href="../-compiler/index.html">Compiler</a>, currentReturnType: <span data-unresolved-link="com.cubearrow.cubelang.common/Type///PointingToDeclaration/">Type</span>? = null, isInSubOperation: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false, operationIndex: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a> = -1, stackIndex: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>&gt; = ArrayList(), lIndex: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a> = 0, jmpOnReturn: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false, separateReturnSegment: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false, argumentIndex: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a> = 0, operationResultType: <span data-unresolved-link="com.cubearrow.cubelang.common/Type///PointingToDeclaration/">Type</span>? = null, variables: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, <a href="../-compiler/-local-variable/index.html">Compiler.LocalVariable</a>&gt;&gt; = ArrayList(), functions: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a>&lt;<span data-unresolved-link="com.cubearrow.cubelang.common.definitions/Function///PointingToDeclaration/">Function</span>&gt; = ArrayList(), inJmpCondition: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false, isOR: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false, structs: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, <a href="../-compiler/-struct/index.html">Compiler.Struct</a>&gt; = HashMap(), errorLibrary: <span data-unresolved-link="com.cubearrow.cubelang.common.errors/ErrorLibrary///PointingToDeclaration/">ErrorLibrary</span>): <a href="index.html">CompilerContext</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="equals" id="%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="../../com.cubearrow.cubelang.compiler.utils/-type-utils/-companion/index.html#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758">equals</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">open operator override fun <a href="../../com.cubearrow.cubelang.compiler.utils/-type-utils/-companion/index.html#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758">equals</a>(other: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>?): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Ferror%2F%23kotlin.Int%23kotlin.Int%23kotlin.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="error" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Ferror%2F%23kotlin.Int%23kotlin.Int%23kotlin.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="error.html">error</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Ferror%2F%23kotlin.Int%23kotlin.Int%23kotlin.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">fun <a href="error.html">error</a>(line: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, index: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, message: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fevaluate%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="evaluate" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fevaluate%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="evaluate.html">evaluate</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fevaluate%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">fun <a href="evaluate.html">evaluate</a>(expression: <span data-unresolved-link="com.cubearrow.cubelang.common/Expression///PointingToDeclaration/">Expression</span>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fevaluate%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="evaluate" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fevaluate%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fevaluate%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="evaluate" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fevaluate%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>Evaluates the expression with the <a href="compiler-instance.html">compilerInstance</a></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetFunction%2F%23kotlin.String%23kotlin.Int%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="getFunction" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetFunction%2F%23kotlin.String%23kotlin.Int%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-function.html">getFunction</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetFunction%2F%23kotlin.String%23kotlin.Int%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">fun <a href="get-function.html">getFunction</a>(functionName: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, argumentSize: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>): <span data-unresolved-link="com.cubearrow.cubelang.common.definitions/Function///PointingToDeclaration/">Function</span>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetFunction%2F%23kotlin.String%23kotlin.Int%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="getFunction" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetFunction%2F%23kotlin.String%23kotlin.Int%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetFunction%2F%23kotlin.String%23kotlin.Int%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="getFunction" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetFunction%2F%23kotlin.String%23kotlin.Int%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>Returns a function if the name and number of arguments match.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetVariable%2F%23kotlin.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="getVariable" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetVariable%2F%23kotlin.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-variable.html">getVariable</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetVariable%2F%23kotlin.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">fun <a href="get-variable.html">getVariable</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="../-compiler/-local-variable/index.html">Compiler.LocalVariable</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetVariable%2F%23kotlin.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="getVariable" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetVariable%2F%23kotlin.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetVariable%2F%23kotlin.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="getVariable" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetVariable%2F%23kotlin.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>Returns the <a href="../-compiler/-local-variable/index.html">Compiler.LocalVariable</a> with the requested name from all elements of the current <a href="variables.html">variables</a> stack.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetVariableFromArrayGet%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="getVariableFromArrayGet" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetVariableFromArrayGet%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-variable-from-array-get.html">getVariableFromArrayGet</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetVariableFromArrayGet%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">fun <a href="get-variable-from-array-get.html">getVariableFromArrayGet</a>(expression: <span data-unresolved-link="com.cubearrow.cubelang.common/Expression///PointingToDeclaration/">Expression</span>): <a href="../-compiler/-local-variable/index.html">Compiler.LocalVariable</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetVariableFromArrayGet%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="getVariableFromArrayGet" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetVariableFromArrayGet%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetVariableFromArrayGet%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="getVariableFromArrayGet" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FgetVariableFromArrayGet%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>Goes through the expression with recursion until it gets to <span data-unresolved-link="com.cubearrow.cubelang.common/Expression.VarCall///PointingToDeclaration/">Expression.VarCall</span> and returns the variable if found.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="hashCode" id="%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="../../com.cubearrow.cubelang.compiler.utils/-type-utils/-companion/index.html#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758">hashCode</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">open override fun <a href="../../com.cubearrow.cubelang.compiler.utils/-type-utils/-companion/index.html#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758">hashCode</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FmoveExpressionToX%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="moveExpressionToX" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FmoveExpressionToX%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="move-expression-to-x.html">moveExpressionToX</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FmoveExpressionToX%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">fun <a href="move-expression-to-x.html">moveExpressionToX</a>(expression: <span data-unresolved-link="com.cubearrow.cubelang.common/Expression///PointingToDeclaration/">Expression</span>): <a href="../-move-information/index.html">MoveInformation</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FmoveExpressionToX%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="moveExpressionToX" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FmoveExpressionToX%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FmoveExpressionToX%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="moveExpressionToX" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FmoveExpressionToX%2F%23com.cubearrow.cubelang.common.Expression%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>Returns the information needed to move the specific expression to a register.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" anchor-label="toString" id="%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="../../com.cubearrow.cubelang.compiler.utils/-type-utils/-companion/index.html#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758">toString</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><div class="symbol monospace">open override fun <a href="../../com.cubearrow.cubelang.compiler.utils/-type-utils/-companion/index.html#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-420969758">toString</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Properties</h2>
+              <div class="table" data-togglable="Properties"><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FargumentIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="argumentIndex" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FargumentIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="argument-index.html">argumentIndex</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FargumentIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FargumentIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="argumentIndex" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FargumentIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="symbol monospace">var <a href="argument-index.html">argumentIndex</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a> = 0<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FargumentIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="argumentIndex" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FargumentIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>The current index for the function arguments.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FcompilerInstance%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="compilerInstance" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FcompilerInstance%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="compiler-instance.html">compilerInstance</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FcompilerInstance%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FcompilerInstance%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="compilerInstance" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FcompilerInstance%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="symbol monospace">var <a href="compiler-instance.html">compilerInstance</a>: <a href="../-compiler/index.html">Compiler</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FcompilerInstance%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="compilerInstance" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FcompilerInstance%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>The instance to operate on.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FcurrentReturnType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="currentReturnType" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FcurrentReturnType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="current-return-type.html">currentReturnType</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FcurrentReturnType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FcurrentReturnType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="currentReturnType" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FcurrentReturnType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="symbol monospace">var <a href="current-return-type.html">currentReturnType</a>: <span data-unresolved-link="com.cubearrow.cubelang.common/Type///PointingToDeclaration/">Type</span>? = null<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FcurrentReturnType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="currentReturnType" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FcurrentReturnType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>The return type of the current function.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FerrorLibrary%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="errorLibrary" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FerrorLibrary%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="error-library.html">errorLibrary</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FerrorLibrary%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FerrorLibrary%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="errorLibrary" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FerrorLibrary%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="symbol monospace">val <a href="error-library.html">errorLibrary</a>: <span data-unresolved-link="com.cubearrow.cubelang.common.errors/ErrorLibrary///PointingToDeclaration/">ErrorLibrary</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Ffunctions%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="functions" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Ffunctions%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="functions.html">functions</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Ffunctions%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Ffunctions%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="functions" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Ffunctions%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="symbol monospace">var <a href="functions.html">functions</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a>&lt;<span data-unresolved-link="com.cubearrow.cubelang.common.definitions/Function///PointingToDeclaration/">Function</span>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Ffunctions%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="functions" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Ffunctions%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>A <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a> of all defined functions.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FinJmpCondition%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="inJmpCondition" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FinJmpCondition%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="in-jmp-condition.html">inJmpCondition</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FinJmpCondition%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FinJmpCondition%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="inJmpCondition" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FinJmpCondition%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="symbol monospace">var <a href="in-jmp-condition.html">inJmpCondition</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FinJmpCondition%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="inJmpCondition" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FinJmpCondition%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>Used for comparisons to know whether or not to jump to an l sublabel.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FisInSubOperation%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="isInSubOperation" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FisInSubOperation%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="is-in-sub-operation.html">isInSubOperation</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FisInSubOperation%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FisInSubOperation%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="isInSubOperation" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FisInSubOperation%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="symbol monospace">var <a href="is-in-sub-operation.html">isInSubOperation</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FisInSubOperation%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="isInSubOperation" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FisInSubOperation%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>A <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> used to find out whether an operation should push and pop the used registers for the other operation(s).</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FisOR%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="isOR" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FisOR%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="is-o-r.html">isOR</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FisOR%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FisOR%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="isOR" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FisOR%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="symbol monospace">var <a href="is-o-r.html">isOR</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FisOR%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="isOR" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FisOR%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>Evaluates whether or not the comparison is in an or expression.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FjmpOnReturn%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="jmpOnReturn" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FjmpOnReturn%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="jmp-on-return.html">jmpOnReturn</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FjmpOnReturn%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FjmpOnReturn%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="jmpOnReturn" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FjmpOnReturn%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="symbol monospace">var <a href="jmp-on-return.html">jmpOnReturn</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FjmpOnReturn%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="jmpOnReturn" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FjmpOnReturn%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>Required for return statements to know weather to jmp or not.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FlIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="lIndex" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FlIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="l-index.html">lIndex</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FlIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FlIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="lIndex" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FlIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="symbol monospace">var <a href="l-index.html">lIndex</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a> = 0<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FlIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="lIndex" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FlIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>The current amount of sublabels called '.Ln'.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FoperationIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="operationIndex" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FoperationIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="operation-index.html">operationIndex</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FoperationIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FoperationIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="operationIndex" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FoperationIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="symbol monospace">var <a href="operation-index.html">operationIndex</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FoperationIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="operationIndex" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FoperationIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>The depth of the current operation.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FoperationResultType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="operationResultType" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FoperationResultType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="operation-result-type.html">operationResultType</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FoperationResultType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FoperationResultType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="operationResultType" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FoperationResultType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="symbol monospace">var <a href="operation-result-type.html">operationResultType</a>: <span data-unresolved-link="com.cubearrow.cubelang.common/Type///PointingToDeclaration/">Type</span>? = null<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FoperationResultType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="operationResultType" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FoperationResultType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>The result type of the expression that has just been evaluated.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FseparateReturnSegment%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="separateReturnSegment" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FseparateReturnSegment%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="separate-return-segment.html">separateReturnSegment</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FseparateReturnSegment%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FseparateReturnSegment%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="separateReturnSegment" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FseparateReturnSegment%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="symbol monospace">var <a href="separate-return-segment.html">separateReturnSegment</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FseparateReturnSegment%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="separateReturnSegment" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FseparateReturnSegment%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>Tells the compiler to create a separate return segment for functions.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FstackIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="stackIndex" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FstackIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="stack-index.html">stackIndex</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FstackIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FstackIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="stackIndex" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FstackIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="symbol monospace">var <a href="stack-index.html">stackIndex</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FstackIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="stackIndex" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2FstackIndex%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>A <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a> with the indexes of the lowest variable saved on the stack in the current scope/function.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fstructs%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="structs" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fstructs%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="structs.html">structs</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fstructs%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fstructs%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="structs" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fstructs%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="symbol monospace">var <a href="structs.html">structs</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, <a href="../-compiler/-struct/index.html">Compiler.Struct</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fstructs%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="structs" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fstructs%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>A list of structs.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fvariables%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="variables" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fvariables%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":X86_64Backend:dokkaHtml/main" data-filterable-set=":X86_64Backend:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="variables.html">variables</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fvariables%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":X86_64Backend:dokkaHtml/main"><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fvariables%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="variables" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fvariables%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a><div class="symbol monospace">var <a href="variables.html">variables</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, <a href="../-compiler/-local-variable/index.html">Compiler.LocalVariable</a>&gt;&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fvariables%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" anchor-label="variables" id="%5Bcom.cubearrow.cubelang.compiler%2FCompilerContext%2Fvariables%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-420969758" data-filterable-set=":X86_64Backend:dokkaHtml/main"></a>A <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a> which acts as a stack to store all of the variables present.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2020 Copyright</span><span class="pull-right"><span>Sponsored and developed by dokka</span><a href="https://github.com/Kotlin/dokka"><span class="padded-icon"></span></a></span></div>
+      </div>
+    </div>
+  </body>
+</html>
+

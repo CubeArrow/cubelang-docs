@@ -1,0 +1,8 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+com.cubearrow.cubelang.common
+com.cubearrow.cubelang.common.definitions
+com.cubearrow.cubelang.common.errors
+com.cubearrow.cubelang.common.tokens
+
